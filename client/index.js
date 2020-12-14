@@ -48,9 +48,10 @@ export default class Slideshow extends Component {
 	};
 
 	render() {
-		const socket = io('/socket');
+		const socket = io('https://chapelzill.herokuapp.com/socket.io/');
 
 		socket.on('connect', () => {
+			console.log('connected!');
 			if (!this.state.emitted) {
 				socket.emit('vrConnected');
 				this.setState({ emitted: true });
