@@ -1,0 +1,3 @@
+rootProject.name = 'hello360'
+
+include ':app'
