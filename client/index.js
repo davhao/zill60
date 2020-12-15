@@ -20,7 +20,13 @@ class Background extends Component {
 
 export default class Slideshow extends Component {
 	state = {
-		photos  : [],
+		photos  : [
+			{
+				uri    : 'https://chapel-zill-1.s3.amazonaws.com/IMG_7848-1607802289303.JPG',
+				title  : '1 of 1',
+				format : '2D'
+			}
+		],
 		index   : 0,
 		emitted : false
 	};
