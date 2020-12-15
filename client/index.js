@@ -59,6 +59,7 @@ export default class Slideshow extends Component {
 		});
 
 		socket.on('files', (files) => {
+			console.log('files recieved on vr client');
 			this.setPhotos(files);
 		});
 
