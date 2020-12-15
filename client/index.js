@@ -48,7 +48,7 @@ export default class Slideshow extends Component {
 	};
 
 	render() {
-		const socket = io('https://chapelzill.herokuapp.com/socket.io/');
+		const socket = io('https://chapelzill.herokuapp.com');
 
 		socket.on('connect', () => {
 			console.log('connected!');
