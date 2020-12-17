@@ -52,7 +52,7 @@ export default class Slideshow extends Component {
 
 		socket.on('connect', () => {
 			if (!this.state.emitted) {
-				socket.emit('vrConnected');
+				socket.emit('vrConnected', Math.floor(Math.random() * 1000000));
 				this.setState({ emitted: true });
 			}
 		});
